@@ -1,0 +1,14 @@
+2014-03-28 16:49:34,144 INFO [main] root (EmployeeResource.java:58) - All employees requested.
+2014-03-28 16:49:34,518 INFO [main] root (EmployeeResource.java:101) - Employee with username: user1 was found.
+2014-03-31 08:45:44,632 INFO [main] root (EmployeeResource.java:58) - All employees requested.
+2014-03-31 08:45:44,908 INFO [main] root (EmployeeResource.java:101) - Employee with username: user1 was found.
+2014-03-31 08:46:52,664 INFO [main] root (EmployeeResource.java:58) - All employees requested.
+2014-03-31 08:46:52,918 INFO [main] root (EmployeeResource.java:101) - Employee with username: user1 was found.
+2014-03-31 08:47:13,830 INFO [main] root (EmployeeResource.java:58) - All employees requested.
+2014-03-31 08:47:14,082 INFO [main] root (EmployeeResource.java:101) - Employee with username: user1 was found.
+2014-03-31 09:46:07,638 INFO [main] root (EmployeeResource.java:58) - All employees requested.
+2014-03-31 09:46:07,950 INFO [main] root (EmployeeResource.java:101) - Employee with username: user1 was found.
+2014-03-31 09:47:28,783 INFO [main] root (EmployeeResource.java:58) - All employees requested.
+2014-03-31 09:47:29,032 INFO [main] root (EmployeeResource.java:101) - Employee with username: user1 was found.
+2014-03-31 10:04:12,552 INFO [main] root (EmployeeResource.java:58) - All employees requested.
+2014-03-31 10:04:12,821 INFO [main] root (EmployeeResource.java:101) - Employee with username: user1 was found.

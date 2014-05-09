@@ -1,0 +1,59 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+
+	<persistence-unit name="nttdata"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+		<class>com.nttdata.bikes.entities.Pedelec</class>
+		<class>com.nttdata.bikes.entities.Employee</class>
+		<class>com.nttdata.bikes.entities.PedelecStation</class>
+		<class>com.nttdata.bikes.entities.Reservation</class>
+		<class>com.nttdata.bikes.entities.TransferRequest</class>
+		<class>com.nttdata.bikes.entities.DeviceToken</class>
+
+		<properties>
+
+
+			<property name="hibernate.archive.autodetection" value="class" />
+
+			<!-- Comment out if schema exists & you don't want the tables dropped. -->
+			<property name="hibernate.hbm2ddl.auto" value="update"/>   <!-- drop/create tables @startup, drop tables @shutdown -->
+
+			<!-- Database Connection Settings -->
+			<property name="hibernate.connection.autocommit" value="true" />
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.connection.username" value="root" />
+			<property name="hibernate.connection.password" value="admin" />
+			<property name="hibernate.connection.url"
+				value="jdbc:mysql://localhost:3306/nttdata?characterEncoding=UTF-8" />
+			<property name="hibernate.connection.lc_type" value="UTF-8" />
+			
+			<!-- Not sure about these... -->
+			<property name="hibernate.max_fetch_depth" value="16" />
+			<property name="hibernate.jdbc.batch_size" value="1000" />
+			<property name="hibernate.use_outer_join" value="true" />
+			<property name="hibernate.default_batch_fetch_size" value="500" />
+
+			<!-- Hibernate Query Language (HQL) parser. 
+			<property name="hibernate.query.factory_class"
+				value="org.hibernate.hql.ast.ASTQueryTranslatorFactory" />
+-->
+			<!-- Echo all executed SQL to stdout -->
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="false" />
+
+			<!-- Use c3p0 for the JDBC connection pool 
+			<property name="hibernate.c3p0.min_size" value="3" />
+			<property name="hibernate.c3p0.max_size" value="100" />
+			<property name="hibernate.c3p0.max_statements" value="100" />
+
+			<property name="hibernate.cache.provider_class" value="org.hibernate.cache.HashtableCacheProvider" />
+			-->
+		</properties>
+
+	</persistence-unit>
+
+</persistence>
